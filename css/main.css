@@ -1,0 +1,292 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+@font-face {
+    font-family: 'Fineliner Script';
+    src: url('../fonts/fineliner_script-webfont.eot');
+    src: url('../fonts/fineliner_script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fineliner_script-webfont.woff2') format('woff2'),
+         url('../fonts/fineliner_script-webfont.woff') format('woff'),
+         url('../fonts/fineliner_script-webfont.ttf') format('truetype'),
+         url('../fonts/fineliner_script-webfont.svg#fineliner_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Global stuff */
+body {
+    font: 1.125em/1.388888889 Helvetica, Arial, sans-serif;
+    /* 1.125 = 18px / 1.388888889 = 25px*/
+    background-color: #202020;
+    background-color: #bada55;
+    color: #bababa;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+blockquote {margin: 0;}
+
+
+/* Mobile-First approach */
+.x_section {background-color: #333;}
+.wrapper {
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+.block {
+    padding: 6.25% 6.25% 0; /* 30/480 */
+}
+.block .section-title {
+    font-size: 1.388888889em; /* 25px */
+    line-height: 1;
+    text-transform: uppercase;
+    color: #5abfeb;
+    margin: 0;
+}
+
+/* Our mission block */
+.text .quote_text {margin: .65em 0 .5em}
+.text .quote_author {text-align: right}
+.text .quote_author a {
+    display: inline-block;
+    margin-right: 6.25%; /* 30px/480 */
+    font: 2.2em/1 'Fineliner Script', cursive;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* News block */
+.list li:not(:first-child) {margin-top: .8em}
+.list .article_title {
+    display: inline-block;
+    margin: 0 .65em 0 0;
+}
+.list .article_link:hover {text-decoration: underline;}
+.list .article_link,
+.list .article_date {
+    font-size: 1em;
+    line-height: 1.111111111; /* 20/18 */
+    color: #fff;
+    text-decoration: none;
+}
+.list .article_date {
+    display: inline-block;
+    font-weight: bold;
+    color: #5abfeb;
+}
+.list .article_excerpt {margin: 0;}
+
+
+/* Intermediate resolutions. 480 to 800px-width screens */
+@media only screen and (min-width: 481px) {
+    body {
+        font-size: 1em; /* 16px */
+        line-height: 1.375; /* 22px */
+    }
+    .wrapper {
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+        overflow: hidden;
+        padding-bottom: 0
+    }
+    .block {
+        -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+        width: 38%;            /* For old syntax, otherwise collapses. */
+        -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
+        -ms-flex: 1;           /* IE 10 */
+        flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
+        margin: 2.5% 0 4% 3.75%; /* 20/800 = 2.5%, 32/800 = 4%, 30/800 = 3.75%*/
+        padding: 28px 2.5% 20px; /* 20/800 = 2.5% */
+        border-top: 3px solid #5abfeb;
+        background-color: #202020;
+    }
+    .block:last-child {margin-right: 3.75%;}
+    @-moz-document url-prefix() { 
+      .block {
+         margin-top: 20px;
+         margin-bottom: 32px;
+      }
+    }
+    .block .section-title {
+        font-size: 1.375em; /* 22px */
+        /*1.3125em; /* 21px */
+        margin-bottom: 22px;
+    }
+    .text .quote_author a {font-size: 2.5em}
+    .list .article_title {
+        font-size: 1.0625em; /* 17px */
+        margin: 0 5px 3px 0;
+    }
+}
+
+/* Bigger screens, +800px-width */
+@media only screen and (min-width: 950px) {
+    body {
+        font-size: .9375em; /* 15px */
+    }
+    .wrapper {max-width: 920px}
+    .block {
+        width: 410px;
+        margin: 27px 0 30px;
+        padding: 26px 20px;
+    }
+    .block:first-child {margin-right: 30px;}
+    .block:last-child {margin-right: 0;}
+    .block .section-title {
+        margin-bottom: 18px;
+    }
+    .text .quote {
+        background: url(../img/quotes.png) no-repeat 4px 0;      
+    }
+    .text .quote_text {
+        padding: 3px 0 0 40px;
+        margin-bottom: 0;
+    }
+    .text .quote_author a {
+        margin-right: 58px;
+        font-size: 2.6em;
+    }
+    .list ul {
+        list-style-image: url(../img/icon.png);
+        padding-left: 20px
+    }
+    .list ul li {
+        padding: 2px 0 0 6px;
+        margin: 0 0 6px 0;
+    }
+    .list .article_title {margin: 0 10px 5px 0}
+    .list .article_excerpt {
+        font-size: .933333333em; /* 14/15 */
+        line-height: 1.5625;
+    }
+}
+
+.oldie {
+    text-align: center;
+    padding: 1em;
+    color: black;
+    background: yellow;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
