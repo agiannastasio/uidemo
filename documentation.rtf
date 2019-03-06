@@ -1,0 +1,96 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\froman\fcharset0 TimesNewRomanPS-BoldItalicMT;
+\f3\froman\fcharset0 TimesNewRomanPS-BoldMT;\f4\froman\fcharset0 TimesNewRomanPS-ItalicMT;}
+{\colortbl;\red255\green255\blue255;\red67\green67\blue67;\red17\green85\blue204;}
+{\*\expandedcolortbl;;\csgenericrgb\c26275\c26275\c26275;\csgenericrgb\c6667\c33333\c80000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid2\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw12240\paperh15840\vieww12540\viewh16140\viewkind1
+\deftab720
+\pard\pardeftab720\ri0\sl276\slmult1\sb400\partightenfactor0
+
+\f0\fs32 \cf0 Summary\
+\pard\pardeftab720\ri0\sl276\slmult1\partightenfactor0
+
+\f1\fs28 \cf2 This is a brief description of my work on this tiny project. It is somehow a step-by-step guide of my procedures and some comments about the concepts and tools I applied here.\
+It is intended to support my agreement with this statement about coding:\
+\pard\pardeftab720\ri0\sl276\slmult1\partightenfactor0
+
+\f2\i\b \cf2 \
+\'93the maintainability of your code is the most important part to think about, and you can only do that while you write it\'94\
+\pard\pardeftab720\ri0\sl276\slmult1\partightenfactor0
+
+\f1\i0\b0 \cf2 \
+This is a proverb I always try to bear in mind while I'm writing code as my goal is to develop future-friendly, re-usable web solutions.\
+\pard\pardeftab720\ri0\sl276\slmult1\sb400\partightenfactor0
+
+\f0\fs32 \cf0 Implementation process\
+\pard\tx360\tx720\pardeftab720\li720\fi-360\ri0\sl276\slmult1\partightenfactor0
+\ls1\ilvl0
+\f1\fs28 \cf2 \uc0\u9679 	I craftily created this HTML by hand, using 
+\f3\b Sublime Text
+\f1\b0  and 
+\f3\b Google Chrome
+\f1\b0 . I started up with an empty HTML5 template created via {\field{\*\fldinst{HYPERLINK "http://www.initializr.com/"}}{\fldrslt \cf3 \ul \ulc3 Initializr}} (based on {\field{\*\fldinst{HYPERLINK "https://html5boilerplate.com/"}}{\fldrslt \cf3 \ul \ulc3 html5bolierplate}})\
+\uc0\u9679 	
+\f3\b Content first
+\f1\b0 : First of all, I designed the HTML mark-up following the W3C documentation. I checked that the styleless HTML (no CSS added, only the default browser styles) is already matching the final design structure
+\f3\b \
+\ls1\ilvl0
+\f1\b0 \uc0\u9679 	
+\f3\b Mobile first
+\f1\b0 : I started styling the \'93default\'94 version of the page, for smaller resolutions (<480px-width screens). Then, I added media queries matching bigger resolutions
+\f3\b \
+\ls1\ilvl0
+\f1\b0 \uc0\u9679 	Code practices:\
+\pard\tx1080\tx1440\pardeftab720\li1440\fi-360\ri0\sl276\slmult1\partightenfactor0
+\ls1\ilvl1\cf2 \uc0\u9675 	structuring the HTML/CSS on 
+\f3\b re-usable blocks
+\f1\b0 , so this section can be used on other page/templates. This section should work well no matter its context (using the \'93x_section\'94 wrapper)\
+\uc0\u9675 	defining 
+\f3\b mnemotechnic CSS class names
+\f1\b0 \
+\uc0\u9675 	use of 
+\f3\b HTML5 semantics
+\f1\b0 \
+\uc0\u9675 	
+\f3\b Responsive Design
+\f1\b0 , flexible layout: all sizes are proportional so the layout is adaptive to the screen size.\uc0\u8232 On bigger screens, the layout is fixed, being closer to pixel-perfection.
+\f3\b \
+\ls1\ilvl1
+\f1\b0 \uc0\u9675 	
+\f3\b Font size:
+\f1\b0  uses the flexible ems instead of fixed px ({\field{\*\fldinst{HYPERLINK "https://css-tricks.com/why-ems/"}}{\fldrslt \cf3 \ul \ulc3 why ems?}})
+\f3\b \
+\pard\tx360\tx720\pardeftab720\li720\fi-360\ri0\sl276\slmult1\partightenfactor0
+\ls1\ilvl0
+\f1\b0 \cf2 \uc0\u9679 	
+\f3\b Typography
+\f1\b0 : it uses an OS-based font-stack. For the 
+\f4\i \'93John Doe\'94
+\f1\i0 signature I downloaded the TTF font from the Internet and created the Web Font pack from {\field{\*\fldinst{HYPERLINK "http://www.fontsquirrel.com/tools/webfont-generator"}}{\fldrslt \cf3 \ul \ulc3 Font Squirrell}}
+\f3\b \
+\ls1\ilvl0
+\f1\b0 \uc0\u9679 	
+\f3\b Multi-device compatibility
+\f1\b0 : I tested this page on different mobile devices (iPhone, Android and Windows phones) and also using the Webkit emulator.\uc0\u8232 Cross-browser testing made against Chrome, Firefox (Ubuntu, OS X and Windows), Safari and Internet Explorer. Looks well on every browser and is compatible with IE9+ ({\field{\*\fldinst{HYPERLINK "https://www.browserstack.com/"}}{\fldrslt \cf3 \ul \ulc3 browserstack.com}}). Non-compatible IE will show a warning message.
+\f3\b \
+\pard\pardeftab720\ri0\sl276\slmult1\sb400\partightenfactor0
+\ls1\ilvl0
+\f0\b0\fs32 \cf0 Time report\
+\pard\pardeftab720\ri0\sl276\slmult1\partightenfactor0
+\ls1\ilvl0
+\f1\fs28 \cf2 Here's a sketchy report with the time I consumed (total ~5h)\
+\pard\tx360\tx720\pardeftab720\li720\fi-360\ri0\sl276\slmult1\partightenfactor0
+\ls2\ilvl0\cf2 \uc0\u9679 	1h Designing the mark-up\
+\uc0\u9679 	1h Styling the mobile version and testing it\
+\uc0\u9679 	.5h Creating the "Fineliner" webfont. Fixing details on mobile\
+\uc0\u9679 	1.5h Designing and testing the flex layout for intermediate resolutions\
+\uc0\u9679 	.5h Designing the Desktop version. Cross-browser testing\
+\uc0\u9679 	1h Documentation\
+\pard\pardeftab720\ri0\sl276\slmult1\partightenfactor0
+\ls2\ilvl0\cf2 \
+\
+Thanks for reading :)\
+}
