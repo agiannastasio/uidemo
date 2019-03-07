@@ -1,8 +1,5 @@
 # UI Demo
-HTML/CSS implementation based on provided designs.
-
-Also check the [documentation](https://github.com/agiannastasio/uidemo/blob/master/documentation.rtf).
-
+HTML/CSS implementation based on provided designs:
 
 Desktop:
 
