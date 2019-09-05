@@ -1,64 +1,57 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="1IE=edge,chrome=1">
-        <title>UI Dev demo</title>
-        <meta name="description" content="This is an example page regarding UI development.">
-        <meta name="author" content="agustin.giannastasio@gmail.com">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="1IE=edge,chrome=1">
+  <title>UI Dev demo</title>
+  <meta name="description" content="This is an example page regarding UI development.">
+  <meta name="author" content="agustin.giannastasio@gmail.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+</head>
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 10]> <p class="oldie">You are using an old browser. <a href="http://outdatedbrowser.com/en" target="_blank">Need some help?</a></p> <![endif]-->
-    <div class="x_section">
-        <div class="wrapper">
-
-            <section class="block text">
-                <h2 class="section-title">Our mission</h2>
-                <blockquote cite="http://www.lipsum.com" class="quote">
-                    <p class="quote_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <footer class="quote_author">
-                        <a href="#" rel="author" title="See more John Doe brilliant quotes...">John Doe</a>
-                    </footer>
-                </blockquote>
-            </section>
-
-            <section class="block list">
-                <h2 class="section-title">Latest news</h2>
-                <ul>
-                    <li>
-                        <article class="item">
-                            <h3 class="article_title">
-                                <a href="#" class="article_link" title="Brief desc for Sample article">Sample article title is here</a>
-                            </h3>
-                            <time datetime="2013-06-12" class="article_date">12 june 2013</time>
-                            <p class="article_excerpt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Been the industry's standard dummy.</p>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="item">
-                            <h3 class="article_title">
-                                <a href="#" class="article_link" title="Another article in a nutshell">Another article</a>
-                            </h3>
-                            <time datetime="2013-06-12" class="article_date">12 june 2013</time>
-                            <p class="article_excerpt">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        </article>
-                    </li>
-                </ul>
-            </section>
-
-        </div> <!-- End Wrapper -->
-    </div> <!-- End x_section -->
-
-<!--
+<body>
+  <!--[if lt IE 10]> <p class="oldie">You are using an old browser. <a href="http://outdatedbrowser.com/en" target="_blank">Need some help?</a></p> <![endif]-->
+  <div class="component">
+    <div class="wrap">
+      <section class="block block--text">
+        <h2 class="block__title">Our mission</h2>
+        <blockquote cite="http://www.lipsum.com" class="block__quote">
+          <p class="quote__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <footer class="quote__author">
+            <a class="quote__author__link" href="#" rel="author" title="See more John Doe brilliant quotes...">John Doe</a>
+          </footer>
+        </blockquote>
+      </section>
+      <section class="block block--list">
+        <h2 class="block__title">Latest news</h2>
+        <ul class="articles__list">
+          <li class="articles__item">
+            <article class="article">
+              <h3 class="article__title">
+                <a href="#" class="article__link" title="Brief desc for Sample article">Sample article title is here</a>
+              </h3>
+              <time datetime="2013-06-12" class="article__date">12 june 2013</time>
+              <p class="article__excerpt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Been the industry's standard dummy.</p>
+            </article>
+          </li>
+          <li class="articles__item">
+            <article class="article">
+              <h3 class="article__title">
+                <a href="#" class="article__link" title="Another article in a nutshell">Another article</a>
+              </h3>
+              <time datetime="2013-06-12" class="article__date">12 june 2013</time>
+              <p class="article__excerpt">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </div> <!-- End Wrapper -->
+  </div> <!-- End x_component -->
+  <!--
     Google Analytics tracking code and other external scripts should be placed here.
 -->
+</body>
 
-    </body>
 </html>
