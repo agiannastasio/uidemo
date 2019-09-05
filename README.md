@@ -1,7 +1,6 @@
 # UI Demo
-HTML/CSS implementation using HTML5 bolierplate and normalize.css. Mobile-First approach. Responsiveness solved with percentages inspired in Responsive Web Design by Ethan Marcotte.
+Plain HTML/CSS implementation using HTML5 bolierplate and normalize.css. Mobile-First approach. Responsiveness solved with percentages inspired in Responsive Web Design by Ethan Marcotte.
 It's based on this designs:
-
 
 Desktop:
 
