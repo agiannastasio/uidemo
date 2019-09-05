@@ -1,5 +1,8 @@
 # UI Demo
 Plain HTML/CSS implementation using HTML5 bolierplate and normalize.css. Mobile-First approach. Responsiveness solved with percentages inspired by [Responsive Web Design by Ethan Marcotte](https://abookapart.com/products/responsive-web-design).
+
+Published on [Github Pages](https://agiannastasio.github.io/uidemo/).
+
 It's based on this designs:
 
 Desktop:
